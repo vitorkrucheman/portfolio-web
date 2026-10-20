@@ -1,0 +1,115 @@
+/* Fundo geral escuro */
+body {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Pequena etiqueta no topo (verde) */
+.badge {
+    border: 1px solid #2ecc71;
+    color: #2ecc71;
+    padding: 6px 16px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+/* Moldura redonda com contorno verde à volta da foto */
+.foto-container {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 25px auto;
+    border-radius: 50%;
+    border: 3px solid #2ecc71;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-perfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Título principal */
+h1 {
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 900;
+    margin: 10px 0;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+/* O apelido fica verde */
+h1 span {
+    color: #2ecc71; 
+}
+
+.subtitle {
+    font-style: italic;
+    color: #aaaaaa;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Linha decorativa ondulada verde */
+.linha-ondulada {
+    color: #2ecc71;
+    margin-bottom: 30px;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.linha-ondulada::after {
+    content: "~~~";
+}
+
+/* Estilo dos botões */
+.botoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.btn-escuro {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #333333;
+}
+
+/* Botão principal em tom de verde */
+.btn-amarelo {
+    background-color: #2ecc71;
+    color: #0d0d0d;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
